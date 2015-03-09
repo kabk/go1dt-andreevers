@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>pagePiling.js plugin - Horizontal scroll</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	          	direction: 'horizontal',
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11'],
+			    
+			    navigation: {
+			    	'position': 'right',
+			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4', 'Page 5', 'Page 6', 'Page 7', 'Page 8', 'Page 9', 'Page 10', 'Page 11']
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+	    });
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+
+</head>
+<body onLoad="MM_preloadImages('imgs/Animatie-SDFWP.gif')">
+	<ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">SDFWP</a></li>
+		<li data-menuanchor="page2"><a href="#page2">Social Design</a></li>
+		<li data-menuanchor="page3"><a href="#page3">Vragen</a></li>
+        <li data-menuanchor="page4"><a href="#page4">Disciplines</a></li>
+        <li data-menuanchor="page5"><a href="#page5">Kernbegrippen 1</a></li>
+        <li data-menuanchor="page6"><a href="#page6">Kernbegrippen 2</a></li>
+        <li data-menuanchor="page7"><a href="#page7">Kernbegrippen 3</a></li>
+        <li data-menuanchor="page8"><a href="#page8">Kernbegrippen 4</a></li>
+        <li data-menuanchor="page9"><a href="#page9">Nawoord</a></li>
+        <li data-menuanchor="page10"><a href="#page10">Colofon 1</a></li>
+        <li data-menuanchor="page11"><a href="#page11">Colofon 2</a></li>
+	</ul>
+
+
+	<div id="pagepiling">
+    
+	    <div class="section" id="section1"><div id="SDFWP">
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('SDFWP','','imgs/Animatie-SDFWP.gif',1)"><img src="imgs/Beeld SDFWP.png" alt="SDFWP" name="SDFWP" width="689" height="152" border="0"></a></div>
+	    </div>
+        
+      <div class="section" id="section2">
+	    	<div class="intro"><div id="animatie"></div>
+	    		<h1>social design</h1>
+	    		<p>Social design is het inzetten van ontwerpdenken om lastige sociale vraagstukken aan te pakken.<br>
+                Er zijn immers nogal wat problemen in onze maatschappij waar vertegenwoordigers van huidige instanties, van sociaal werkers tot politici, hun tanden op stuk bijten. Waarom dan geen andere benadering geprobeerd? Baat het niet dan schaadt het waarschijnlijk ook niet. Een frisse blik, daar kun je niet tegen zijn. Deze houding is vrij typerend voor de manier waarop social design vaak wordt benaderd. Dat is zeker niet slecht, want hierdoor krijgen social designers op dit moment de kans hun eerste wankele stappen in de maatschappij te zetten.<br />
+      <br />
+Social design is geen oppervlakkig trucje, maar een serieus en voor alle betrokkenen diep ingrijpend proces. Een social-design project is een ontmoetingsplaats, een kruising van vele wegen. Om verder te komen wordt van alle partijen onvoorwaardelijke openheid, bereidheid tot leren en een fikse dosis persoonlijke moed gevraagd. De beloning voor die betrokkenheid ligt in de verrassende dynamiek,<br>
+de inspiratie en ook de gelegenheid tot zelfreflectie die wordt aangeboord. Maar ook in de ontdekking van nieuwe manieren om de fysieke, mentale, financiële en sociale gezondheid van onze samenleving te bevorderen. Daarvoor is de kennis en kunde van vele beroepsvelden nodig. De ontwerpbenadering achter social design kan ruimte creëren die nieuwe vormen van samenwerking mogelijk maakt.<br>
+Maar die ruimte is lang niet zo onschuldig als zij misschien lijkt. Het is geen neutraal terrein: uiteindelijk zal iedereen moeten veranderen om deze uitdagingen aan te kunnen gaan. Geen partij of beroepsveld kan hetzelfde blijven. Oók de ontwerpers en kunstenaars die het project dragen worden geconfronteerd met fundamentele vragen over wie en wat ze zijn. Al deze vragen zijn niet zomaar opgelost.<br>
+
+      <br />
+     Aan de ene kant ontwikkelen ontwerpers en Kunstenaars zich tot social designers om met hun kennis en kunde impact te hebben op sociaal- maatschappelijke vraagstukken. Aan de andere kant zijn organisaties op zoek naar nieuwe manieren om tot werkende strategieën voor diezelfde vraagstukken te komen. SDFWP heeft als doel het vakgebied social design een steviger basis te geven en de discussie hierover van kritische en constructieve input te voorzien. Daarnaast is het de ambitie om social design als methode voor het aanpakken van wicked problems (taaie vraagstukken) herkenbaarder en hanteerbaarder te maken voor meer potentiële opdrachtgevers en voor ontwerpers en kunstenaars. Ten slotte is het de bedoeling om de aansluiting te bevorderen tussen deze partijen en maatschappelijke belanghebbenden zoals overheden, bedrijven en andere organisaties.</p>
+            </div>
+	    </div>
+        
+	    <div class="section" id="section3">
+	    	<div class="intro"><div id="vul"></div>
+	    		<h1>vragen</h1>
+	    		<p>Hoe kan een kunstenaar in de positie komen dat hij daadwerkelijk invloed kan hebben op de maatschappij?
+      Wat is er voor nodig om tot goede werkafspraken met een opdrachtgever te komen?
+      Is het waar dat het werken in het hart van beleidsvraagstukken de autonomie van de kunstenaar ondermijnt?
+      Hoe verhoudt maatschappelijke impact zich tot artistieke kwaliteit?
+      Hoe kunnen we de ontwikkeling bevorderen van artistiek interessante projecten met werkelijke maatschappelijke impact?
+      Wat voor ontwerpbenaderingen kunnen social designers inzetten om gedrag rondom complexe maatschappelijke problemen positief te beïnvloeden?
+      Hoe kan een kunstenaar impact hebben op wat mensen belangrijk vinden in de maatschappij?
+      Hoe kan een kunstenaar een bestaand systeem effectief veranderen?
+      Wat voegen de disciplines toe aan elkaars aanpak en hoe kan de kennis van taaie vraagstukken die binnen de veranderkunde bestaat het vakgebied social design verder helpen?</p>
+    	  </div>
+	    </div>
+        
+        <div class="section" id="section4">
+	    	<div class="intro"><div id="vul"></div>
+	    		<h1>disciplines</h1>
+	    		<p>SDFWP is geïnitieerd vanuit drie verschillende werkpraktijken:<br />
+      -Ontwerp<br />
+      -Beeldende kunst<br />
+      -Veranderkunde<br />
+      <br />
+      <b>Ontwerp</b><br>
+      In het ontwerpveld is de praktijk van social design al enkele jaren in opkomst. Met de term social design bedoelen verschillende beoefenaars verschillende dingen, maar de algemene tendens is dat veel ontwerpers vanuit hun vak relevant willen zijn in de context van maatschappelijke vraagstukken.<br>
+<br>
+<b>Beeldende kunst</b><br>
+Ook in de kunstenaarspraktijk is er behoefte om aansluiting te vinden bij maatschappelijke
+      processen. Aan de ene kant is deze ontwikkeling ingegeven door de afgenomen cultuurbudgetten bij de overheid, aan de andere kant is het een ontwikkeling
+      afkomstig uit de artistieke praktijk zelf. In de twintigste eeuw richtte de beeldende kunst zich sterk op de zogenaamde white cubes, waar de maatschappelijke context nadrukkelijk buiten de deur werd gehouden. Deze benadering wringt meer en meer met de hedendaagse realiteit die toenemend vernetwerkt, complex en dynamisch is. Het is echter niet evident wat een artistieke praktijk kan betekenen buiten de kunstsector en haar eigen criteria.<br>
+<br>
+<b>Veranderkunde</b><br>
+De veranderkundige praktijk zoekt naar nieuwe manieren om de vraagstukken van onze tijd het hoofd te kunnen bieden. De recessie leidt tot introspectie. Menig organisatie realiseert zich dat méér van hetzelfde geen antwoord zal geven. Daarom is een andere aanpak dringend gewenst. Social design zou zo’n andere aanpak kunnen zijn. De praktijk hiervan is nog sterk in ontwikkeling en er bestaat nog te weinig kennis over wat goed social
+      design teweeg kan brengen. Dat betekent dat er nu vaak nog weinig ruimte is voor social-design processen waarvan op voorhand niet duidelijk is hoe ze werken en wat ze op zullen leveren. Binnen SDFWP wordt onderzocht wat social design interessant maakt vanuit de veranderkunde en wat veranderkunde nuttig maakt voor social design.<br>
+<br>
+</p>
+</div>
+</div>
+
+        <div class="section" id="section5">
+	    	<div class="intro"><div id="vul"></div>
+	    		<h1>kernbegrippen 1</h1>
+	    		<p> Binnen SDFWP spelen vier kernbegrippen een zodanig belangrijke rol dat we ze hier apart willen toelichten:<br />
+        -Wicked problems<br />
+        -Social design<br />
+        -Frame creation<br />
+        -Veranderkunde<br>
+<br><b>Wicked problems</b><br>SDFWP richt zich vooral op de omgang met wicked problems, een term die in het Nederlands meestal wordt vertaald als ‘taaie vraagstukken’. Wat zijn taaie vraagstukken? Vraagstukken kunnen we typeren aan de hand van de mate van kennis die erover is in relatie tot de mate van consensus die erover bestaat. Dit levert ruwweg vier categorieën
+        op:<br />
+        -Eenvoudige vraagstukken<br>
+        Vraagstukken waar veel kennis over is en waar consensus over bestaat.<br />
+        Bijvoorbeeld: Hoe kunnen we energie besparen?<br />
+        -Ethische vraagstukken<br>
+        Vraagstukken waarveel kennis over bestaat maar weinigconsensus.<br />
+        Bijvoorbeeld: Is euthanasia maatschappelijk aanvaardbaar?<br />
+        -Wetenschappelijke vraagstukken<br>
+        Vraagstukken waarbij sprake is van weinig kennis maar vaak wel veel consensus.<br />
+        Bijvoorbeeld: Bestaan er aarde-achtige planeten buiten ons zonnestelsel?<br />
+        -Taaie vraagstukken<br>
+        Vraagstukken waarover zowel te weinig kennis over is als weinig consensus.<br />
+        <br />
+        Niet alleen treden er steeds meer nieuwe taaie problemen op, ook worden we gevoeliger voor de taaiheid van problemen die we vroeger niet als taai zagen.
+        Taaie vraagstukken kunnen ook worden getypeerd als:<br />
+        -Open<br>
+        Taaie vraagstukken zijn open omdat ze moeilijk af te bakenen zijn. Vele externe
+        factoren en belanghebbenden hebben er invloed op.<br />
+        -Complex<br>
+        Taaie vraagstukken zijn complex omdat de vraagstukken niet in handzame
+        stukjes kunnen worden opgedeeld en stapje voor stapje worden opgelost.
+        De factoren die een rol spelen hangen op verschillende manieren samen.<br />
+        -Dynamisch<br>
+        Taaie vraagstukken zijn dynamisch omdat er telkens nieuwe factoren, 	belanghebbenden en contexten in het spel komen. Het zijn bewegende doelen.
+        Gezondheid is bijvoorbeeld gekoppeld aan sociaal-culturele achtergrond, voeding 	aan inkomen, opleiding aan opvoeding.<br />
+        -Verbonden<br>
+        In de huidige samenleving wordt de vernetwerkte aard van veel maatschappelijke
+        problemen steeds beter herkend. Bij taaie vraagstukken zijn er meestel geen voor 	de hand liggende probleemeigenaren. Om er iets mee te doen moet hoe dan ook 	samengewerkt worden, want er zijn vele belanghebbenden.<br />
+        <br />
+</p>
+	    	</div>
+	    </div>
+        
+        <div class="section" id="section6">
+	    	<div class="intro"><div id="vul"></div>
+	    		<h1>kernbegrippen 2</h1>
+	    		<p><b>Social design</b><br>
+ 			Het gebruik van de term social design is sterk in opkomst, maar er is zoals gezegd niet echt een gedeelde definitie, al overlappen de interpretaties elkaar meestal wel voor een groot deel. Een typering van social design op drie
+          niveaus,<br>
+de drie M’s:<br />
+          -Mentaliteit<br />
+          Social design is gericht op sociale innovatie. Veel projecten zijn georiënteerd op
+          een ‘betere wereld’. Ze dienen maatschappelijke doelen en zijn gunstig voor 	specifieke groepen mensen. De ontwerper of kunstenaar onderneemt social design 	vanuit een geëngageerde houding.<br />
+          -Materiaal<br />
+          Social design manifesteert zich in de eerste plaats binnen het sociale domein en
+          richt zich op vraagstukken waarbij gedragsverandering gewenst is. Menselijke 	relaties zijn belangrijk als materiaal in het ontwerp. Ontwerpers en kunstenaars 	kunnen hierbij een voorname rol spelen omdat ervaring vaak centraal staat in hun 						maakprocessen.<br />
+          -Methode<br />
+          Social design gebruikt sociale processen als hulpmiddel. Een social-design
+          ontwerp betrekt belanghebbenden, gebruikers en probleemeigenaren, in een 	integral ontworpen proces. Door deze werkwijze kunnen belanghebbenden vanuit 	diverse domeinen en disciplines gedeeld eigenaar worden van het proces.
+          Het innovatieve potentieel en de expertise van de betrokkenen worden benut, wat 	tevens leidt tot draagvlak voor het ontwerp onder de betrokkenen. <br />
+          <br />
+          Procesbeschrijving van social design:<br />
+          1. Vraagstuk definiëren (framen)<br />
+          2. (Veld)onderzoek doen<br />
+          3. Reframing<br />
+          4. Prototypes maken en testen<br />
+          5. Ontwerp implementeren<br />
+          6. Reflectie/evaluatie (wat is het meetbare effect en waar moet het social design 	worden bijgesteld?)<br />
+          <br /></p>
+	    	</div>
+	    </div>
+        
+        <div class="section" id="section7">
+	    	<div class="intro"><div id="vul"></div>
+            <h1>kernbegrippen 3</h1><p><b>Frame creation</b><br>
+SDFWP heeft zich laten inspireren door de Frame Creation-methode van prof. Kees Dorst. Deze methode is gebruikt als handvat voor het social-design proces, als manier om te beschrijven wat een social design voor type product kan opleveren, een reframing, en om van tevoren het type resultaat te kunnen benoemen. Deze methode kan worden ingezet als conceptueel hulpmiddel.<br><br>
+Een reframing is een ontworpen andere manier van kijken naar een vraagstuk. Door deze nieuwe manier van kijken ontstaat ruimte voor experiment. Frame creation is een specifieke vorm van social
+            design. Een veelbelovende manier om te werken met taaie vraagstukken. Naast de benodigde nieuwe kijk op het probleem geeft het de mogelijkheid om belanghebbenden rond een vraagstuk met elkaar te verbinden in een integraal procesontwerp.<br>
+<br>
+Het benutten van de expertise van de betrokkenen en het genereren van draagvlak voor de uitkomsten ondervangt drie kenmerkende aspecten van taaie vraagstukken:<br />
+            -gebrek aan kennis<br />
+            -gebrek aan consensus<br />
+            -gebrek aan eigenaarschap<br />
+            <br /></p></div></div>
+            
+        <div class="section" id="section8">
+	    	<div class="intro"><div id="vul"></div>
+            <h1>kernbegrippen 4</h1><p><b>Veranderkunde</b><br>
+SDFWP is tevens geïnspireerd door het boek Plezier beleven aan taaie vraagstukken,
+                geschreven door Hans Vermaak. Social design beoogt een positieve verandering rondom een sociaal-maatschappelijk vraagstuk teweeg te brengen, waarbij ‘verandering’ overigens niet moet worden verward met ‘oplossing’. Veranderkunde is een discipline in de consultancy die zich bezighoudt met de structuur of werkwijze van een organisatie. Organisaties kunnen overheden zijn, bedrijven, netwerken van individuen, of alle mogelijke combinaties hiervan.<br>
+<br>
+Taaie vraagstukken nemen binnen de veranderkunde
+                een bijzondere plaats in. Taaie vraagstukken zijn een soort meesterproef, waarbij vaardigheid binnen het klassieke repertoire nooit voldoende is. Er wordt altijd om iets extra’s gevraagd en het is nooit zeker of je succesvol zult zijn. Veranderkunde biedt een aantal interessante en nuttige theorieën en instrumenten om social design mee te analyseren. Een daarvan is het ‘kleurendenken’ over manieren van veranderen.<br><br>
+                Het kleurendenken is een ordeningskader en onderscheidt
+                vijf stijlen van verandering. Elke stijl heeft zijn eigen karakteristieken, zowel in de diagnose,
+                de communicatie als de aanpak. Er is geen hiërarchie. Alle stijlen hebben hun eigen voordelen en valkuilen.<br />
+                -Geel<br />
+                Deze kleur duidt een politieke insteek aan. Men gaat uit van verandering door de
+                belangrijkste spelers via onderhandelingen tot een consensus te brengen.<br />
+                -Blauw<br />
+                Deze kleur duidt projectmatig werken aan. Veranderingen komen tot stand na
+                onderzoek over de beste oplossing, waarna men deze planmatig implementeert.<br />
+                -Rood<br />
+                Deze kleur duidt zachte waarden aan. Er verandert iets als je mensen op de juiste
+                manier prikkelt zodat ze zich erkend en gewaardeerd voelen binnen het sociale 	proces.<br />
+                -Groen<br />
+                Deze kleur duidt het leren aan. Door mensen in leersituaties te brengen, ze bewuster
+                en bekwamer te maken, verandert er iets. Het vermogen van betrokkenen bij het 	werken in een ontwikkelproces wordt groter.<br />
+                -Wit<br />
+                Deze kleur duidt een organische insteek aan. Verandering vindt plaats door spontane
+                evolutie een handje te helpen via het creëren van ruimte waar energie zit en het 	opheffen van blokkades.<br /></p></div></div>
+            
+           <div class="section" id="section9">
+	    	<div class="intro"><div id="vul"></div>
+            <h1>Nawoord</h1><p>Veranderkunde is als vakgebied een stuk jonger dan ontwerp en beeldende kunst. Zodra je even onder de motorkap ervan kijkt, besef je al snel dat we méér niet begrijpen en beheersen dan wel. Misschien hoort het wel bij de adolescentie van de veranderkunde dat we moeten leren ons minder ongemakkelijk te voelen bij het niet-weten. Meer bezig te zijn met iets te zoeken in plaats van iets te vinden, met iets al doende vorm te geven in plaats van iets uit te rollen. Dat ontwerpers en beeldend kunstenaars zich daar meer comfortabel bij lijken te voelen past wellicht bij de langere historie van hun vakgebied. Het verschil tussen social designers en veranderaars geeft in ieder geval een hint waarom samenwerking waarde heeft: je compenseert elkaars eenzijdigheden. Dat geldt bijvoorbeeld voor de nadruk in social design op ‘show, don’t tell’, want bij veel adviseurs en managers is de reflex andersom. En voor de social-design voorkeur voor een lerende en ontdekkende aanpak: laten dat nou net de benaderingen zijn waar slechts een minderheid van de professionele veranderaars kundig mee werkt. Het verschil tussen beide werelden is dus iets om te koesteren.<br /><br />
+                  
+                  Bij elke vernieuwing is ruimte nodig: cognitief, om anders te denken, emotioneel, om de onzekerheid te verdragen, en relationeel, om samen het experiment te volbrengen. Die ruimte maakt leren mogelijk. Je gaat spelen met wat eerst ‘gek’ lijkt en buiten de orde valt maar juist daardoor in staat is innovatie te brengen. Het begrip technology of foolishness van James March: echte vernieuwing voelt altijd ‘gek’, maar hij waarschuwt dat niet alles wat ‘gek’ voelt ook vernieuwt. Vernieuwen lukt alleen als de gekkigheid ook ambachtelijk is: dat het spelen niet gaat over frivoliteit of een time-out van het serieuze leven, maar dat het gaat om een kundigheid die verandering provoceert en faciliteert. Ambacht ontstaat als je het niet kunt laten die kundigheid te blijven scherpen, er je werk van maakt, er resultaten mee boekt, er je identiteit mee verbindt en er kennis over schept en deelt met anderen die dat ook doen.<br /><br />
+                  
+                  De wens om die ambachtelijkheid te verkennen en benoemen is waardevol, want complexe opgaven kunnen alleen maar goed gehanteerd worden als je er iets mee hebt, als je erkent dat er meer speelt dan je begrijpt en als je wilt experimenteren samen met betrokkenen. Het is overigens best mogelijk dat kunstenaars, ontwerpers of veranderkundigen dat zomaar eigenstandig in hun mars hebben. Zo’n benadering past goed in de veranderkundige traditie van actie-onderzoek. Wat hier als ambachtelijkheid naar voren komt, past wellicht in de diepgang van alle drie de professies. Maar tegelijk valt niet te ontkennen dat de verschillen tussen beide werelden bijna onoverbrugbaar lijken als je kijkt naar een stereotypische invulling: beeldende kunst geïsoleerd in white cubes en veranderkunde als top-down maakbaarheidsparadigma. Die stereotypen zijn nog ruimschoots aanwezig en persistent. Tussentaal en co-productie blijken mooie manieren om die brug toch te slaan, waardoor beoefenaars van beide disciplines, social designers en veranderaars, kunnen groeien in hun vak.<br /></p></div></div>
+            
+             <div class="section" id="section10">
+	    	<div class="intro"><div id="vul"></div>
+            <h1>Colofon 1</h1><p><b>Initiatiefnemers</b><br>
+Yu-Lan van Alphen – Programme Manager Culture & Social
+        Design, Stichting DOEN<br />
+        Tabo Goudswaard – kunstenaar, social designer<br />
+        Klaas Kuitenbrouwer – programmacoördinator<br />
+        Het Nieuwe Instituut<br />
+        André Schaminée – organisatieadviseur, Twynstra Gudde<br />
+  <br /><b>Deelnemers</b><br>
+Simon Akkaya – productontwerper, Waarmakers studio<br />
+        Rosé de Beer – kunstenaar<br />
+        Alex Bogman – Corporate Strategist, Nationale Nederlanden<br />
+        Lino Hellings – kunstenaar en socioloog, PAPA<br />
+        Maarten Heijltjes – productontwerper, Waarmakers studio<br />
+        May Britt Janssen – coördinator Jeugd &amp; Veiligheid, Stadsdeel
+        West, Gemeente Amsterdam<br />
+        Aafke Kauffman – user-centered designer, MU ZUS<br />
+        Neele Kistemaker – user-centered designer, MU ZUS<br />
+        Martien Kuitenbrouwer – stadsdeelvoorzitter, Stadsdeel West,
+        Gemeente Amsterdam<br />
+        Sjaak Langenberg – kunstenaar<br />
+        Geza Laqueur – Business Manager CEO NN Life, Nationale
+        Nederlanden<br />
+        Jorge Mañes Rubio – kunstenaar, Seethisway<br />
+        Martien van Rijn – teamleider Buurtpraktijkteam, Stadsdeel
+        West, Gemeente Amsterdam<br />
+        Brett Tollman – HR Director Reward and Performance
+        Management, Nationale Nederlanden<br>
+<br>
+<b>Experts</b><br>
+Kars Alfrink – game designer, hubbub
+Emer Beamer – social innovator, Unexpect<br />
+Kees Dorst – hoogleraar Design, Technische Universiteit Eindhoven / hoogleraar<br />
+Design, University of Technology, Sydney / Alastair<br />
+Fuad-Luke – hoogleraar Emerging Design Practice, School of Arts, Design and Architecture, Aalto University, Helsinki<br />
+Paul Gofferjé – fotograaf / coördinator NO ACADEM Y<br />
+Jeanne van Heeswijk – kunstenaar
+Edwin Kaats – samenwerkingsadviseur Common<br />
+Eye<br />
+Mieke Moor – organisatieadviseur, Twynstra Gudde<br />
+Timo de Rijk – hoogleraar Design, Culture &amp; Society, Technische Universiteit Delft en Universiteit Leiden / curator Utrecht Manifest<br />
+Dick Rijken – lector Informatietechnologie en Samenleving, De Haagse Hogeschool / directeur STEIM<br />
+Pieter Jan Stappers – hoogleraar Design, Faculteit Industrieel Ontwerpen, Technische Universiteit Delft<br />
+Nynke Tromp – assistent-hoogleraar / reframing studio, social designer, Faculteit Industrieel Ontwerpen, Technische Universiteit Delft<br />
+Hans Vermaak – onafhankelijk adviseur, onderzoeker, schrijver over veranderkunde<br />
+</p></div></div>
+
+<div class="section" id="section11">
+	    	<div class="intro"><div id="vul"></div>
+            <h1>Colofon 2</h1><p><b>Met dank aan:</b><br>
+            Angela Bruintjes, Kalle Brüsewitz, Folkert Buis, Steve Elbers, Flora van Gaalen, Aart Helder, Marlieke Kieboom,<br>
+Karlis Krecers, Anne Marth Kuilder, Anita van de Looij, Tamara Madern, Daniël Melse, Maureen Mooren,<br>
+Charlotte Rommerts, Mary Ann Scheurs, Floor van Spaendonck, Tatjana van Strien, Jurga Zelvyte, Katía Truijen,<br>
+Tim Vermeulen, Domenique Himmelsbach de Vries, Jaap Warmenhoven.<br /><br>
+<b>Publicatie</b><br>
+Ontwerp: Laura Pappa<br />
+Tekst: Klaas Kuitenbrouwer, Tabo Goudswaard, André Schaminée, Kees Dorst, Hans Vermaak<br />
+Eindredactie: Sybrand Zijlstra<br />
+Vertaling: Daniël Naamani<br />
+Druk: Mart Spruijt<br />
+Fotografie: Jan-Dirk van der Burg, Sebastiaan ter Burg<br />
+<br />
+<b>Webpublicatie</b><br>
+Ontwerp en realisatie: André Evers - student Grafisch Ontwerpen KABK<br>
+<br>
+Deze publicatie werd mogelijk gemaakt door de genereuze financiële en inhoudelijke ondersteuning van Stichting DOEN.</p></div></div>            
+	</div>
+
+</body>
+</html>
